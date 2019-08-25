@@ -34,7 +34,7 @@ class LumenFormGeneratorServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('command.make.form-request', function ($app) {
-            return new Console\MakeRequestCommand();
+            return new Console\MakeRequestCommand($app['files']);
         });
 
         $this->commands([

@@ -15,13 +15,17 @@ The code in the article is a little out of date and while I was updating it for 
 
 Mikiyas original code dealt with redirects and sessions; in order to keep this implementation in line with how Lumen is intended to be used I have stripped out that functionality and coded for returning Json responses.
 
-## Usage
+## Install
 
 Install with `composer require photogabble/lumen-form-request` and then enable the library in your `bootstrap/app.php` file with:
 
 ```
 $app->register(\Photogabble\LumenFormRequest\LumenFormGeneratorServiceProvider::class);
 ```
+
+## Usage
+
+Create a new form request with the command `make:api-request {request name}` and the command will create a new file in your `app/Http/Requests` path (creating it if it does not already exist).
 
 ## Not invented here
 

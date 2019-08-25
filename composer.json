@@ -1,0 +1,21 @@
+{
+  "name": "photogabble/lumen-form-request",
+  "description": "Laravel-like form requests built for Lumen",
+  "type": "library",
+  "require": {
+    "php": ">=7.1.3",
+    "laravel/lumen-framework": "5.8.*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Simon Dann",
+      "email": "simon.dann@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Photogabble\\LumenFormRequest\\": "src/"
+    }
+  }
+}
